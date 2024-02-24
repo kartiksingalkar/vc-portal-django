@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+local_settings.py
+
+# Virtual environment
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Log files
+*.log
+
+# Caches
+__pycache__/
+
+# Ignore .env file containing sensitive information
+.env
+
+# Ignore local database configurations
+**/local_settings.py
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore the Django migration history
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore system files
+Thumbs.db
+
