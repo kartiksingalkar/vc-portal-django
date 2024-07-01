@@ -39,7 +39,7 @@ print("Hello, {}".format("World!")) # format string
 # using format funciton
 
 
-# Escape characters
+# Escape characters 
 
 # String methods
 
@@ -55,8 +55,40 @@ print(srting.isalnum(), "isalnum") # check if all char are numaric
 
 
 
-# use \' for year's usign ' in string this is know as escape character
+# use \' for year's using ' in string this is know as escape character
 
 
 
 # Check string
+
+
+
+# swapcase problem 
+
+def swap_case(s):
+    result = []
+    for char in s:
+        if char.islower():
+            result.append(char.upper())
+        elif char.isupper():
+            result.append(char.lower())
+        else:
+            result.append(char)
+    return ''.join(result)
+
+input_string = "HackerRank.com presents \"Pythonist 2\"."
+output_string = swap_case(input_string)
+print(output_string)
+
+
+# string in string find substring
+def contains_substring(main_str, sub_str):
+    return sub_str in main_str
+
+main_str = "hi my name is hi"
+sub_str = "hi"
+
+result = contains_substring(main_str, sub_str)
+print(result)
+
+
