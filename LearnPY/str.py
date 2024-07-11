@@ -92,3 +92,31 @@ result = contains_substring(main_str, sub_str)
 print(result)
 
 
+
+# remove integer(num) from the list of string
+my_list = ['Ar3n', 'd23pa4', 'ds4gh6', 'b3l3']
+for i in range(len(my_list)):
+    # Use list comprehension to remove digits
+    my_list[i] = ''.join([char for char in my_list[i] if not char.isdigit()])
+print(my_list)
+
+my_list = ['Ar3n', 'd23pa4', 'ds4gh6', 'b3l3']
+
+# Function to remove digits from a string
+def remove_digits(s):
+    result = ""
+    for char in s:
+        if not char.isdigit():
+            result += char
+    return result
+
+# Process each item in the list
+for i in range(len(my_list)):
+    my_list[i] = remove_digits(my_list[i])
+
+print(my_list)
+
+
+
+
+
